@@ -26,7 +26,6 @@ public class MainActivity extends Activity
     private String number;
     private String mContent;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
