@@ -53,8 +53,6 @@ public class SecondActivity extends Activity {
 
         //选择联系人的按钮
         mSelect.setOnClickListener(new View.OnClickListener() {
-
-
             @Override
             public void onClick(View view) {
 
