@@ -22,6 +22,10 @@ public class MainActivity extends Activity
     EditText mSmsContent;
     @InjectView(R.id.bt_send)
     Button mBtSend;
+    @InjectView(R.id.bt_start)
+    Button mBtStart;
+
+
     private SmsManager mSmsManager;
     private String number;
     private String mContent;
@@ -62,6 +66,14 @@ public class MainActivity extends Activity
                 mSmsManager.sendTextMessage(number,null,mContent,mPendingIntent,null);
 
                 Toast.makeText(MainActivity.this, "短信发送完成", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+        mBtStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,SecondActivity.class));
             }
         });
     }
