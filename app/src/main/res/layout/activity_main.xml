@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zhoujian.smsmanager.MainActivity">
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入电话号码"
+        android:background="@null"/>
+
+    <EditText
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:hint="请输入短信内容"
+        android:background="@null"/>
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"/>
+</LinearLayout>
